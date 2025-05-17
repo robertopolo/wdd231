@@ -1,0 +1,64 @@
+@media (min-width: 760px) {
+    header button{
+        display: none;
+    }
+
+    button.opened{
+        display: none;
+    }
+
+    .opened{
+        display: flex;
+    }
+
+    .profile{
+        justify-content: space-evenly;
+    }
+
+    .profile img{
+        width: 15rem;
+    }
+
+    header nav ul{
+        align-items: center;
+        display: flex;
+        height: 5rem;
+        justify-content: space-evenly;
+    }
+
+    main > div{
+        display: grid;
+        grid-template-columns: 1fr 40rem;
+        grid-template-rows: 35rem 1fr;
+        gap: 2rem;
+    }
+
+    .course-work, .city, .courses{
+        border-radius: .4rem;
+        box-shadow: 0 0 .8rem .3rem var(--dark-grey);
+    }
+
+    .courses{
+        grid-column: span 2;
+    }
+
+    #filters-courses{
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    #filters-courses button{
+        max-width: 12rem;
+    }
+
+    #courses-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    #courses-list p{
+        flex: 1 0 30%
+    }
+}

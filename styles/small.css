@@ -1,0 +1,266 @@
+:root{
+    --primary-color: #2667cdff;
+    --secondary-color: #ee6352;
+    --primary-font: 'Nunito', Segoe UI, sans-serif;;
+    --secondary-font: 'Ubuntu', Segoe UI, sans-serif;;
+    --dark: #11151cff;
+    --dark-grey: #7a7b7b;
+    --white: #f4faffff;
+    --grey: #c0c9c9;
+    --passed-border: #9e3c2f;
+    --pending-border: #5a5a5a;
+}
+
+*{
+    border: none;
+	box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+}
+
+img{
+    width: 10rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    width: 100%;
+}
+
+h1, h2, h3, button{
+    font-family: var(--primary-font);
+}
+
+a, p, span, figcaption, li{
+    font-family: var(--secondary-font);
+}
+
+header{
+    align-content: center;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+header button{
+    cursor: pointer;
+}
+
+header button::before{
+    content: '☰';
+}
+
+button.opened::before{
+    content: '⛌';
+}
+
+#hamb-button{
+    border: none;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 2.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.profile{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.profile img{
+    box-shadow: .1rem .1rem 1.5rem #11151cff;
+    width: 10rem;
+}
+
+.profile span{
+    color: var(--white);
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+header nav ul{   
+    background-color: var(--dark);
+    display: none;
+    height: 20rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li{
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul li a{
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    font-weight: 700;
+}
+
+.opened{
+    display: block;
+}
+
+.active{
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+main{
+    margin: 1rem auto;
+    width: 90%;
+}
+
+main h1{
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.title{
+    background-color: var(--primary-color);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.course-work{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.course-work ul{
+    justify-content: center;  
+}
+
+.course-work ul li{
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    padding: 1rem;
+}
+
+.city{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.city picture{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.city img{
+    margin: 1rem;
+    width: 25rem;
+}
+
+.city p{
+    font-size: 1.3rem;
+    margin: 0;
+    text-align: center;
+}
+
+#filters-courses{
+    border-bottom: .2rem solid var(--dark-grey);
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+#filters-courses button{
+    background-color: var(--dark);
+    border: none;
+    border-radius: .3rem;
+    color: var(--white);
+    cursor: pointer;
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+#credits{
+    font-size: 1.5rem;
+    font-style: italic;
+    height: 4rem;
+    line-height: 4rem;
+    padding: 1rem;
+}
+
+#credits span{
+    font-style: normal;
+    font-weight: bold;
+}
+
+#courses-list{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+    padding: 1rem;
+}
+
+#courses-list p{
+    background-color: var(--secondary-color);
+    border: .1rem solid var(--passed-border);
+    border-radius: .5rem;
+    color: var(--white);
+    font-weight: bold;
+    height: 5rem;
+    line-height: 5rem;
+    margin: .5rem;
+    text-align: center;
+    width: 100%;
+}
+
+#courses-list .pending{
+    background-color: var(--grey);
+    border: .1rem solid var(--pending-border);
+    color: var(--dark);
+}
+
+footer{
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+footer p{
+    height: 3rem;
+    line-height: 3rem;
+}
+
+#lastModified{
+    color: yellow;
+    font-size: 1.3rem;
+}

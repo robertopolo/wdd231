@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Page</title>
-</head>
-<body>
-    <h1>Test Page</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 231 – Web Frontend Development I - Roberto A. Polo S. - Course Landing Page"
+    />
+    <meta name="author" content="Roberto Polo" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <title>Roberto Polo | WDD231</title>
+  </head>
+  <body>
+    <header>
+      <button id="hamb-button"></button>
+      <div class="profile">
+        <picture>
+          <source
+            media="(min-width:760px)"
+            srcset="images/profile-pic-md.webp"
+          />
+          <img
+            src="images/profile-pic-sm.webp"
+            loading="lazy"
+            alt="profile-pic"
+          />
+        </picture>
+        <span>Roberto Polo</span>
+      </div>
+      <nav>
+        <ul id="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Chamber</a></li>
+          <li><a href="#">Final</a></li>
+          <li><a href="#">Github</a></li>
+          <li><a href="#">Linkedin</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Home</h1>
+      <div>
+        <section class="course-work">
+          <h2 class="title">Course work</h2>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </section>
+        <section class="city">
+          <h2 class="title">Bogotá, Colombia</h2>
+          <picture>
+            <source
+              media="(min-width:700px)"
+              srcset="images/night-skyline-bogota-lg.webp"
+            />
+            <source
+              media="(min-width:500px)"
+              srcset="images/night-skyline-bogota-md.webp"
+            />
+            <img
+              src="images/night-skyline-bogota-sm.webp"
+              loading="lazy"
+              alt="night-skyline-of-bogota"
+            />
+          </picture>
+          <p>Night skyline of Bogotá</p>
+        </section>
+        <section class="courses">
+          <h2 class="title">Web and computer programming certificate</h2>
+          <div id="filters-courses">
+            <button>All</button>
+            <button>CSE</button>
+            <button>WDD</button>
+          </div>
+          <div id="credits"></div>
+          <div id="courses-list"></div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p><span id="currentyear"></span> ⭐ Roberto Polo ⭐ Bogotá, Colombia</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
 </html>
