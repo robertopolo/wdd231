@@ -1,14 +1,16 @@
 @media (min-width: 760px) {
-    header button{
+    #menu-button{
         display: none;
     }
 
-    button.opened{
-        display: none;
-    }
-
-    .opened{
+    ul.menu-links, ul.menu-links.open{
         display: flex;
+        height: 6rem;
+        justify-content: center;
+    }
+
+    ul.menu-links a:hover{
+        color: var(--secondary-color)
     }
 
     .profile{
@@ -17,13 +19,6 @@
 
     .profile img{
         width: 15rem;
-    }
-
-    header nav ul{
-        align-items: center;
-        display: flex;
-        height: 5rem;
-        justify-content: space-evenly;
     }
 
     main > div{

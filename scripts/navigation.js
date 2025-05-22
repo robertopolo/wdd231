@@ -1,25 +1,25 @@
-const home = document.querySelector('#menu a');
-const hambButton = document.querySelector('#hamb-button');
-const menu = document.querySelector('#menu');
-const links = document.querySelectorAll('#menu a');
+const home = document.querySelector('.menu-links li');
+const hamburgerButton = document.querySelector('#menu-button');
+const menu = document.querySelector('#animateme');
+const links = document.querySelectorAll('.menu-links li');
 
 const toggleMenu = () => {
-  hambButton.classList.toggle('opened');
-  menu.classList.toggle('opened');
+  hamburgerButton.classList.toggle('open');
+  menu.classList.toggle('open');
 };
 
-home.classList.add('active');
+home.classList.add('current-menu-item');
 
-hambButton.addEventListener('click', () => {
+hamburgerButton.addEventListener('click', () => {
   toggleMenu();
 });
 
 links.forEach((link) => {
   link.addEventListener('click', () => {
     links.forEach((link) => {
-      link.classList.remove('active');
+      link.classList.remove('current-menu-item');
     });
-    link.classList.toggle('active');
+    link.classList.toggle('current-menu-item');
     toggleMenu();
   });
 });
