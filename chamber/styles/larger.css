@@ -1,0 +1,36 @@
+@media (min-width: 760px) {
+    #menu-button{
+        display: none;
+    }
+
+    ul.menu-links, ul.menu-links.open{
+        display: flex;
+        height: 6rem;
+        justify-content: center;
+    }
+
+    ul.menu-links a:hover{
+        color: var(--secondary-color)
+    }
+
+    .grid{
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+
+    .list{
+        section{
+            img {
+                max-width: 20rem;
+            }
+            p{
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    footer{
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
