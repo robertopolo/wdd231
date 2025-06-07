@@ -49,7 +49,6 @@ async function fetchCurrentWeather() {
 }
 
 function displayForecast(data) {
-  console.log(data);
   divForecast.innerHTML = `
   <p>Today: <span>${data[0].main.temp}&deg;C</span></p>
   <p>${new Date(data[1].dt * 1000).toLocaleDateString('en-US',{weekday: 'long'})}: <span>${data[1].main.temp}</span></p>

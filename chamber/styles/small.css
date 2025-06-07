@@ -32,7 +32,7 @@ body{
 
 /* Text */
 
-h1, h2, h3, button{
+h1, h2, h3, h4, button{
     font-family: var(--primary-font);
 }
 
@@ -267,6 +267,25 @@ ul.events-home li{
 
 #forecast p{
     font-size: 1.8rem;
+}
+
+/* Spotlight */
+
+div.home-cards#spotlight{
+    background-color: #ee6352;
+    border-radius: .3rem;
+}
+
+#spotlight div.spotlight-title{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#spotlight div.spotlight-title h4{
+    font-size: 2.5rem;
 }
 
 /* Body section of the directory page */
