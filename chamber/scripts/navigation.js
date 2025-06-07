@@ -13,10 +13,10 @@ hamburgerButton.addEventListener('click', () => {
 
 links.forEach((link) => {
   link.addEventListener('click', () => {
-    links.forEach((link) => {
-      link.classList.remove('current-menu-item');
-    });
-    link.classList.toggle('current-menu-item');
+    // links.forEach((link) => {
+    //   link.classList.remove('current-menu-item');
+    // });
+    // link.classList.toggle('current-menu-item');
     toggleMenu();
   });
 });

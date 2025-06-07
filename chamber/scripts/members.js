@@ -18,6 +18,8 @@ function displayMembers(member){
     const phone = document.createElement('p');
     const website = document.createElement('a');
 
+    sect.setAttribute('class', 'directory-section');
+
     logo.setAttribute('src', member.image);
     logo.setAttribute('alt', `${member.name.toLowerCase()} logo`);
     logo.setAttribute('loading', 'lazy');

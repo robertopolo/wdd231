@@ -18,9 +18,9 @@
     }
 
     .list{
-        section{
+        section.directory-section{
             img {
-                max-width: 20rem;
+                max-width: 15rem;
             }
             p{
                 font-size: 1.8rem;
@@ -32,5 +32,9 @@
         align-items: center;
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    footer ul{
+        width: 30%;
     }
 }
