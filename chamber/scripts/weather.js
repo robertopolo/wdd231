@@ -73,5 +73,5 @@ async function fetchForecast() {
   }
 }
 
-// fetchCurrentWeather();
-// fetchForecast();
+fetchCurrentWeather();
+fetchForecast();
