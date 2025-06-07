@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="./styles/small.css" />
     <link rel="stylesheet" href="styles/larger.css" />
 
-    <script src="./scripts/date.js" defer></script>
-    <!-- <script src="./scripts/members.js" defer></script> -->
     <script src="./scripts/navigation.js" defer></script>
+    <script src="./scripts/date.js" defer></script>
     <script src="./scripts/weather.js" defer></script>
+    <script src="./scripts/spotlight.js" defer></script>
 
     <meta property="og:title" content="Roberto Polo | WDD231 Home page" />
     <meta
@@ -94,7 +94,10 @@
         </picture>
         <div>
           <h2>Welcome to Bogotá Chamber of Commerce</h2>
-          <p>Connecting businesses, driving growth, and unlocking new opportunities in Bogotá’s economy.</p>
+          <p>
+            Connecting businesses, driving growth, and unlocking new
+            opportunities in Bogotá’s economy.
+          </p>
           <button>Join now</button>
         </div>
       </section>
@@ -112,17 +115,14 @@
         </div>
         <div class="home-cards">
           <h3>Current weather</h3>
-          <div id="current-weather">
-          </div>
+          <div id="current-weather"></div>
         </div>
         <div class="home-cards">
           <h3>Weather forecast</h3>
+          <div id="forecast"></div>
         </div>
       </section>
-      <section class="home-section">
-        <div class="home-cards"></div>
-        <div class="home-cards"></div>
-      </section>
+      <section id="spotlight" class="home-section"></section>
     </main>
     <footer>
       <div class="chamber-info">

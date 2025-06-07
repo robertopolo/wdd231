@@ -21,7 +21,7 @@ function displayMembers(member){
     sect.setAttribute('class', 'directory-section');
 
     logo.setAttribute('src', member.image);
-    logo.setAttribute('alt', `${member.name.toLowerCase()} logo`);
+    logo.setAttribute('alt', `${member.name.toLowerCase().replace(' ', '-')} logo`);
     logo.setAttribute('loading', 'lazy');
 
     foundedDate.textContent = `Founded: ${member.founded}`;
