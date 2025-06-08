@@ -135,6 +135,8 @@ ul.menu-links{
 
 /* Body section of the home page */
 
+/* Hero */
+
 section.hero{
     margin: auto;
     position: relative;
@@ -188,6 +190,8 @@ section.hero div button{
     font-weight: bold;
     width: 10.5rem;
 }
+
+/* Main */
 
 .home-main h1{
     margin: 0;
@@ -270,8 +274,6 @@ ul.events-home li{
 }
 
 /* Spotlight */
-
-
 
 section#spotlight div.home-cards{
     border-radius: 1rem;

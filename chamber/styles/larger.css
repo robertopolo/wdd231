@@ -1,4 +1,5 @@
 @media (min-width: 760px) {
+    /* Menu */
     #menu-button{
         display: none;
     }
@@ -12,6 +13,21 @@
     ul.menu-links a:hover{
         color: var(--secondary-color)
     }
+
+    /* Body section of the home page */
+
+    section.hero{
+        height: 35rem;
+        overflow: hidden;
+    }
+
+    section.hero picture img{
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    /* Body section of the directory page */
 
     .grid{
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -27,6 +43,8 @@
             }
         }
     }
+
+    /* Footer */
 
     footer{
         align-items: center;
