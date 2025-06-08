@@ -23,16 +23,11 @@ function displayMembers(member){
     const divMember = document.createElement('div');
     divMember.setAttribute('class', 'home-cards');
     divMember.innerHTML = `
-    <div class="spotlight-title">
-    <h4>${member.name}</h4>
-    <p>${member.info}</p>
-    </div>
-    <div class="spotlight-info">
     <img src=${member.image} alt=${member.name.toLowerCase().replace(' ', '-')}>
+    <p>${member.info}</p>
     <p><span>EMAIL:</span> ${member.email}</p>
     <p><span>PHONE:</span> ${member.phone}</p>
-    <p><span>URL:</span> ${member.website}</p>
-    </div>`
+    <p><span>URL:</span> ${member.website}</p>`
 
     cardContainer.appendChild(divMember);
 }

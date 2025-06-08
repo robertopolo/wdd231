@@ -271,21 +271,35 @@ ul.events-home li{
 
 /* Spotlight */
 
-div.home-cards#spotlight{
-    background-color: #ee6352;
-    border-radius: .3rem;
-}
 
-#spotlight div.spotlight-title{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+section#spotlight div.home-cards{
+    border-radius: 1rem;
+    gap: 1rem;
     padding: 1rem;
 }
 
-#spotlight div.spotlight-title h4{
-    font-size: 2.5rem;
+#spotlight img{
+    height: 6rem;
+    gap: 1rem;
+    object-fit: contain;
+    width: auto;
+}
+
+#spotlight p:first-of-type{
+    color: var(--dark);
+    font-size: 1rem;
+    border-bottom: .1rem solid var(--dark-grey);
+    padding-bottom: 1rem;
+}
+
+#spotlight p{
+    color: var(--dark);
+    font-size: 1.3rem;
+}
+
+#spotlight p span{
+    font-weight: bold;
 }
 
 /* Body section of the directory page */
