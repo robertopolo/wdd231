@@ -1,4 +1,4 @@
-@media (min-width: 760px) {
+@media (min-width: 860px) {
     /* Menu */
     #menu-button{
         display: none;
@@ -16,6 +16,13 @@
 
     /* Body section of the home page */
 
+    main{
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    /* Hero */
+
     section.hero{
         height: 35rem;
         overflow: hidden;
@@ -25,6 +32,41 @@
         height: 100%;
         object-fit: cover;
         width: 100%;
+    }
+
+    /* Main content */
+
+    #info{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 28rem 22rem;
+        grid-template-rows: 1fr;
+    }
+
+    div.home-cards > ul, div.home-cards > div#forecast{
+        flex-grow: 1;
+    }
+
+    div.home-cards > ul li{
+        font-size: 1.5rem;
+    }
+
+    /* Weather */
+
+    #current-weather{
+        flex-grow: 1;
+        gap: .5rem;
+    }
+
+    #current-weather p{
+        font-size: 1.3rem;
+    }
+
+    /* Spotlight */
+
+    #spotlight{
+        display: flex;
+        flex-direction: row;
     }
 
     /* Body section of the directory page */
