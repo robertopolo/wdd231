@@ -1,7 +1,3 @@
-const coursesList = document.querySelector('#courses-list');
-const buttons = document.querySelectorAll('#filters-courses button');
-const creditsText = document.querySelector('#credits');
-
 const courses = [
   {
     subject: 'CSE',
@@ -70,6 +66,10 @@ const courses = [
     completed: false,
   },
 ];
+const coursesList = document.querySelector('#courses-list');
+const buttons = document.querySelectorAll('#filters-courses button');
+const creditsText = document.querySelector('#credits');
+const courseDetails = document.querySelector('#course-details');
 
 function showCourse(c) {
   let p = document.createElement('p');
@@ -79,6 +79,7 @@ function showCourse(c) {
     p.setAttribute('class', 'pending');
   }
   coursesList.appendChild(p);
+  p.addEventListener('click', () => displayCourseDetails(c));
 }
 
 function showCredits(c) {
@@ -92,6 +93,27 @@ function showCredits(c) {
 function createCourses(arr) {
   arr.forEach((course) => {
     showCourse(course);
+  });
+}
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = '';
+  courseDetails.innerHTML = `
+  <button id="close-modal">❌</button>
+  <h2>${course.subject} ${course.number}</h2>
+  <h3>${course.title}</h3>
+  <p><strong>Credits</strong>: ${course.credits}</p>
+  <p><strong>Certificate</strong>: ${course.certificate}</p>
+  <p>${course.description}</p>
+  <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+
+  courseDetails.showModal();
+
+  const closeModal = document.querySelector('#close-modal');
+
+  closeModal.addEventListener('click', () => {
+    courseDetails.close();
   });
 }
 

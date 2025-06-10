@@ -238,6 +238,32 @@ main h1{
     color: var(--dark);
 }
 
+dialog{
+    background-color: var(--white);
+    border: .1rem solid rgba(0,0,0, .1);
+    border-radius: .3rem;
+    box-shadow: 0 0 1.5rem var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+    max-width: 60rem;
+    padding: 2rem;
+}
+
+::backdrop{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+dialog button{
+    border: .1rem solid rgba(0,0,0, .1);
+    border-radius: .3rem;
+    padding: 1rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
 footer{
     align-items: center;
     background-color: var(--primary-color);
