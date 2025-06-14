@@ -1,0 +1,64 @@
+*{
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+}
+
+div{
+    border: 1rem solid transparent;
+    border-color: #999 transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem #0051ff;
+    height: 20rem;
+    margin: 5rem;
+    width: 20rem;
+}
+
+#loader{
+    animation: spin 1.5s linear infinite;
+}
+
+#loader::after, #zoom::after{
+    animation: pulse 1.5s linear infinite;
+    content: '⚙️';
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#zoom{
+    transition: spin 1.5s linear infinite;
+}
+
+#zoom::after{
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1.5s ease-in-out;
+    font-size: 2rem;
+}
+
+#zoom:hover{
+    transform: rotate(360deg);
+}
+
+#zoom:hover::after{
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+@keyframes spin{
+    100%{transform: rotate(360deg);}
+}
+
+@keyframes pulse{
+    0%, 100%{transform: translate(-50%, -50%) scale(1);}
+    50%{transform: translate(-50%, -50%) scale(3);}
+}

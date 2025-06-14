@@ -86,6 +86,29 @@
         }
     }
 
+    /* Join page */
+
+    /* Main */
+
+    main.join-main{
+        background-color: transparent;
+    }
+
+    div.join-main-content{
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    div.join-main-content aside{
+        margin: 0;
+    }
+
+    /* Dialog */
+
+    dialog{
+        max-width: 50rem;
+    }
+
     /* Footer */
 
     footer{

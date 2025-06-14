@@ -224,6 +224,7 @@ main h1{
     border: .1rem solid var(--passed-border);
     border-radius: .5rem;
     color: var(--white);
+    cursor: pointer;
     font-weight: bold;
     height: 5rem;
     line-height: 5rem;
@@ -241,7 +242,7 @@ main h1{
 dialog{
     background-color: var(--white);
     border: .1rem solid rgba(0,0,0, .1);
-    border-radius: .3rem;
+    border-radius: .5rem;
     box-shadow: 0 0 1.5rem var(--dark-grey);
     margin: auto;
     max-width: 60rem;
@@ -259,10 +260,15 @@ dialog > *{
 dialog button{
     border: .1rem solid rgba(0,0,0, .1);
     border-radius: .3rem;
+    cursor: pointer;
     padding: 1rem;
     position: absolute;
     right: 1.5rem;
     top: 1.5rem;
+}
+
+dialog button:active{
+    border: .1rem solid rgba(0,0,0, .1);
 }
 
 footer{
