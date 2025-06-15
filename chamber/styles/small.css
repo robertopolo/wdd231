@@ -387,9 +387,10 @@ section.directory-section p{
     box-shadow: 0 1rem 1rem .1rem rgba(0,0,0,0.3);
     height: 30rem;
     text-align: center;
-    & > * {
-        margin: 0.5rem;
-    }
+}
+
+.grid section.directory-section > * {
+    margin: 0.5rem;
 }
 
 .list {
