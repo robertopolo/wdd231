@@ -23,7 +23,7 @@ function displayMembers(member){
     const divMember = document.createElement('div');
     divMember.setAttribute('class', 'home-cards');
     divMember.innerHTML = `
-    <img src=${member.image} alt=${member.name.toLowerCase().replace(' ', '-')}>
+    <img src=${member.image} alt=${member.name.toLowerCase().replaceAll(' ', '-')}>
     <p>${member.info}</p>
     <p><span>EMAIL:</span> ${member.email}</p>
     <p><span>PHONE:</span> ${member.phone}</p>

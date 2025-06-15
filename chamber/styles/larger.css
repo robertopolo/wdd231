@@ -1,4 +1,4 @@
-@media (min-width: 860px) {
+@media (min-width: 64.06rem) {
     /* Menu */
     #menu-button{
         display: none;
@@ -102,6 +102,19 @@
     div.join-main-content aside{
         margin: 0;
     }
+
+    /* Discover */
+
+    #places-discover{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #places-discover div.place-discover picture img:hover{
+        opacity: .5;
+    }
+
+    /* Discover */
 
     /* Dialog */
 

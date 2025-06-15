@@ -15,7 +15,7 @@ function displayCurrentWeather(data) {
   const str = data.weather[0].description;
 
   divCurrentWeather.innerHTML = `
-  <img src=${`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} alt=${data.weather[0].description.replace(
+  <img src=${`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} alt=${data.weather[0].description.replaceAll(
     ' ',
     '-'
   )} />
