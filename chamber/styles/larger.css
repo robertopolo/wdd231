@@ -75,15 +75,12 @@
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     }
 
-    .list{
-        section.directory-section{
-            img {
-                max-width: 15rem;
-            }
-            p{
-                font-size: 1.8rem;
-            }
-        }
+    .list section.directory-section img{
+        max-width: 15rem;
+    }
+
+    .list section.directory-section p{
+        font-size: 1.8rem;
     }
 
     /* Join page */
