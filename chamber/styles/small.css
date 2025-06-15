@@ -395,39 +395,39 @@ section.directory-section p{
 
 .list {
     align-items: center;
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
+}
 
-	section.directory-section {
-		display: grid;
-        height: 10rem;
-		grid-template-columns: 1fr 1fr 1fr;
-		margin: 0;
-		padding: .5rem;
+section.directory-section {
+    display: grid;
+    height: 10rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: .5rem;
+}
 
-		& > * {
-			margin: .5rem;
-		}
+section.directory-section> * {
+    margin: .5rem;
+}
 
-		img {
-            height: auto;
-            margin: auto;
-			max-width: 10rem;
-            object-fit: contain;
-		}
+section.directory-section img {
+    height: auto;
+    margin: auto;
+    max-width: 10rem;
+    object-fit: contain;
+}
 
-        p{
-            font-size: 1.2rem;
-        }
+section.directory-section p{
+    font-size: 1.2rem;
+}
 
-        p:nth-child(2), a{
-            display: none;
-        }
+section.directory-section p:nth-child(2), section.directory-section a{
+    display: none;
+}
 
-		&:nth-child(even) {
-			background-color: rgba(22, 188, 253, 0.253);
-		}
-	}
+section.directory-section:nth-child(even) {
+    background-color: rgba(22, 188, 253, 0.253);
 }
 
 /* Join page */
