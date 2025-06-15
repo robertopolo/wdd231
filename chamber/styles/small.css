@@ -709,7 +709,7 @@ footer, div.chamber-info, div.course-info{
 }
 
 footer ul{
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     height: 8rem;
     justify-content: space-evenly;
