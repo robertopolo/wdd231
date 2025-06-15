@@ -697,7 +697,7 @@ dialog p span{
 /* Footer */
 
 footer, div.chamber-info, div.course-info{
-    align-items: left;
+    align-items: flex-start;
     background-color: var(--primary-color);
     color: var(--white);
     display: flex;
@@ -709,7 +709,7 @@ footer, div.chamber-info, div.course-info{
 }
 
 footer ul{
-    align-items: flex-start;
+    align-items: center;
     display: flex;
     height: 8rem;
     justify-content: space-evenly;
