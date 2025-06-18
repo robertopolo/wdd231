@@ -1,82 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="WDD 231 – Web Frontend Development I - Roberto Polo - Chamber of commerce join page"
+      content="Welcome to CineCosmos - Your ultimate movie experience. Check out the latest showtimes, contact us, and enjoy!"
     />
     <meta name="author" content="Roberto Polo" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="icon" href="/chamber/favicon.ico" />
-    <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/small.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
-
-    <script src="./scripts/navigation.js" defer></script>
-    <script src="./scripts/date.js" defer></script>
-    <script src="./scripts/datetimeform.js" defer></script>
-    <script src="./scripts/modal.js" defer></script>
-
-    <meta property="og:title" content="Roberto Polo | WDD231 Join page" />
+    <meta property="og:title" content="CineCosmos - Home" />
     <meta
       property="og:description"
-      content="WDD 231 – Web Frontend Development I - Roberto Polo - Chamber of commerce join page"
+      content="Discover upcoming movies and showtimes at CineCosmos."
     />
-    <meta
-      property="og:image"
-      content="https://robertopolo.github.io/wdd231/chamber/images/networking-icon-md.webp"
-    />
+    <meta property="og:image" content="./images/cine-cosmos-logo-large.webp" />
     <meta
       property="og:url"
-      content="https://robertopolo.github.io/wdd231/chamber"
+      content="https://yourdomain.com/wdd231/final/index.html"
     />
     <meta property="og:type" content="website" />
-    <title>
-      Chamber of commerce join page | WDD231 - Web Fronted Development I|
-      Roberto Polo
-    </title>
+
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <script type="module" src="scripts/main.js" defer></script>
+    <title>CineCosmos | Home</title>
   </head>
   <body>
     <header>
       <div class="logo">
         <picture>
-          <source
-            media="(min-width:760px)"
-            srcset="./images/networking-icon-md.webp"
-          />
           <img
-            src="./images/networking-icon-sm.webp"
+            src="./images/cine-cosmos-logo.webp"
             loading="lazy"
-            alt="networking-icon"
+            alt="cine-cosmos-logo"
           />
         </picture>
         <div>
-          <p>Bogotá D.C.</p>
-          <p>Chamber of Commerce</p>
+          <p>CineCosmos</p>
         </div>
       </div>
       <button id="menu-button"></button>
       <nav id="animateme">
         <ul class="menu-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li class="current-menu-item"><a href="join.html">Join</a></li>
-          <li><a href="discover.html">Discover</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li class="current-menu-item"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main class="join-main">
-      <h1>Join us today</h1>
-      <div class="join-main-content">
+    <main>
+      <section>
+        <h2>Contact Us</h2>
+        <p>
+          Please fill out the form below and we’ll get back to you as soon as
+          possible.
+        </p>
+
         <form action="thankyou.html" method="get" id="join-form">
           <h2>Membership application form</h2>
           <fieldset>
@@ -181,36 +164,15 @@
           <input type="hidden" id="application-date" name="appdate" />
           <input type="submit" value="Send application" />
         </form>
-        <aside>
-          <h2>Membership levels</h2>
-          <div class="card-join">
-            <h3>Non profit membership</h3>
-            <button id="non-profit">More info</button>
-          </div>
-          <div class="card-join">
-            <h3>Bronze membership</h3>
-            <button id="bronze">More info</button>
-          </div>
-          <div class="card-join">
-            <h3>Silver membership</h3>
-            <button id="silver">More info</button>
-          </div>
-          <div class="card-join">
-            <h3>Gold membership</h3>
-            <button id="gold">More info</button>
-          </div>
-        </aside>
-      </div>
-      <dialog id="dialog-box">
-      </dialog>
+      </section>
     </main>
+
     <footer>
-      <div class="chamber-info">
-        <p>Bogotá Chamber of Commerce</p>
-        <p>Kr 100C#129C-17</p>
-        <p>Bogotá D.C., Cundinamarca</p>
-        <p>info@bogotacoc.com</p>
-        <p>(601) 123-4567</p>
+      <div class="f-project">
+        <p>
+          &copy; <span id="year"></span> CineCosmos | Project final - WDD231 |
+          Roberto Polo
+        </p>
       </div>
       <ul>
         <li>
@@ -235,11 +197,13 @@
           /></a>
         </li>
       </ul>
-      <div class="course-info">
-        <p>WDD231 Class Project</p>
-        <p>Roberto Polo</p>
-        <p>&copy; <span id="currentyear"></span> Bogotá Chamber of Commerce</p>
-        <p id="lastModified"></p>
+      <div class="info">
+        <p><a href="attributions.html">Attributions</a></p>
+        <p>
+          <a href="https://www.youtube.com/your-demo-video" target="_blank"
+            >Project Video</a
+          >
+        </p>
       </div>
     </footer>
   </body>

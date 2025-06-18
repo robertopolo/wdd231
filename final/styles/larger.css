@@ -1,0 +1,64 @@
+@media screen and (min-width: 768px) {
+  /*Menu - Start*/
+  #menu-button{
+    display: none;
+  }
+
+  ul.menu-links{
+    display: flex;
+    height: 6rem;
+    justify-content: center;
+  }
+
+  ul.menu-links a:hover{
+    color: var(--accent-color);
+  }
+  /*Menu - End*/
+
+  /*Hero - Start*/
+  section.hero{
+    height: 35rem;
+    overflow: hidden;
+  }
+
+  section.hero picture img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+  /*Hero - End*/
+
+  /*Tickets - Start*/
+  div.tickets{
+    display: flex;
+  }
+  /*Tickets - End*/
+
+  /*Footer - Start*/
+  footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer ul{
+    width: 30%;
+  }
+  /*Footer - End*/
+  
+  /*
+  .movies-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .movie-card {
+    flex: 0 0 30%;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  */
+}

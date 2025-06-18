@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to CineCosmos - Your ultimate movie experience. Check out the latest showtimes, contact us, and enjoy!"
+    />
+    <meta name="author" content="Roberto Polo" />
+
+    <meta property="og:title" content="CineCosmos - Home" />
+    <meta
+      property="og:description"
+      content="Discover upcoming movies and showtimes at CineCosmos."
+    />
+    <meta property="og:image" content="./images/cine-cosmos-logo-large.webp" />
+    <meta
+      property="og:url"
+      content="https://yourdomain.com/wdd231/final/index.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <script type="module" src="scripts/main.js" defer></script>
+    <title>CineCosmos | Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <picture>
+          <img
+            src="./images/cine-cosmos-logo.webp"
+            loading="lazy"
+            alt="cine-cosmos-logo"
+          />
+        </picture>
+        <div>
+          <p>CineCosmos</p>
+        </div>
+      </div>
+      <button id="menu-button"></button>
+      <nav id="animateme">
+        <ul class="menu-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="current-menu-item"><a href="movies.html">Movies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="movie-gallery">
+        <h2>Now Showing</h2>
+        <div id="movie-list" class="movie-list">
+          <!-- JavaScript will dynamically insert movie cards here -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="f-project">
+        <p>
+          &copy; <span id="year"></span> CineCosmos | Project final - WDD231 |
+          Roberto Polo
+        </p>
+      </div>
+      <ul>
+        <li>
+          <a href="https://youtube.com" target="_blank"
+            ><img
+              src="./images/youtube-ico.webp"
+              alt="youtube-icon"
+              loading="lazy"
+          /></a>
+        </li>
+        <li>
+          <a href="https://x.com" target="_blank"
+            ><img src="./images/x-ico.webp" alt="x-icon" loading="lazy"
+          /></a>
+        </li>
+        <li>
+          <a href="https://linkedin.com" target="_blank"
+            ><img
+              src="./images/linkedin-ico.webp"
+              alt="linkedin-icon"
+              loading="lazy"
+          /></a>
+        </li>
+      </ul>
+      <div class="info">
+        <p><a href="attributions.html">Attributions</a></p>
+        <p>
+          <a href="https://www.youtube.com/your-demo-video" target="_blank"
+            >Project Video</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

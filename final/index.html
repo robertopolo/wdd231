@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to CineCosmos - Your ultimate movie experience. Check out the latest showtimes, contact us, and enjoy!"
+    />
+    <meta name="author" content="Roberto Polo" />
+
+    <meta property="og:title" content="CineCosmos - Home" />
+    <meta
+      property="og:description"
+      content="Discover upcoming movies and showtimes at CineCosmos."
+    />
+    <meta property="og:image" content="./images/cine-cosmos-logo-large.webp" />
+    <meta
+      property="og:url"
+      content="https://yourdomain.com/wdd231/final/index.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <script type="module" src="scripts/main.js" defer></script>
+    <title>CineCosmos | Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <picture>
+          <img
+            src="./images/cine-cosmos-logo.webp"
+            loading="lazy"
+            alt="cine-cosmos-logo"
+          />
+        </picture>
+        <div>
+          <p>CineCosmos</p>
+        </div>
+      </div>
+      <button id="menu-button"></button>
+      <nav id="animateme">
+        <ul class="menu-links">
+          <li class="current-menu-item"><a href="index.html">Home</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <picture>
+          <!-- media="(min-width:1024px)" -->
+          <source media="(min-width:64.06rem)" srcset="./images/hero2.jpg" />
+          <!-- media="(min-width:641px)" -->
+          <source media="(min-width:40.05rem)" srcset="./images/hero2.jpg" />
+          <img src="./images/hero2.jpg" loading="lazy" alt="theather-photo" />
+        </picture>
+        <div>
+          <h1>Welcome to CineCosmos</h1>
+          <button onclick="window.location.href='./movies.html'">
+            View showtimes
+          </button>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about">
+        <h2>About CineCosmos</h2>
+        <p>
+          CineCosmos is your ultimate cinema destination, offering
+          state-of-the-art theaters, immersive sound, and a wide variety of
+          genres for all movie lovers. Whether you're a fan of blockbusters,
+          indie films, or international cinema, you'll find something to love
+          here.
+        </p>
+      </section>
+
+      <!-- Ticket Prices Section -->
+      <section class="ticket-prices">
+        <h2>Ticket Prices</h2>
+        <div class="tickets">
+          <div class="ticket">
+            <h3>Standard</h3>
+            <p>Enjoy any regular movie screening in comfortable seating.</p>
+            <p class="price">$6.99</p>
+          </div>
+          <div class="ticket">
+            <h3>Premium</h3>
+            <p>Includes reserved seating and enhanced sound & visuals.</p>
+            <p class="price">$9.99</p>
+          </div>
+          <div class="ticket">
+            <h3>VIP</h3>
+            <p>
+              Luxury recliners, free snacks, and exclusive VIP lounge access.
+            </p>
+            <p class="price">$14.99</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="f-project">
+        <p>
+          &copy; <span id="year"></span> CineCosmos | Project final - WDD231 |
+          Roberto Polo
+        </p>
+      </div>
+      <ul>
+        <li>
+          <a href="https://youtube.com" target="_blank"
+            ><img
+              src="./images/youtube-ico.webp"
+              alt="youtube-icon"
+              loading="lazy"
+          /></a>
+        </li>
+        <li>
+          <a href="https://x.com" target="_blank"
+            ><img src="./images/x-ico.webp" alt="x-icon" loading="lazy"
+          /></a>
+        </li>
+        <li>
+          <a href="https://linkedin.com" target="_blank"
+            ><img
+              src="./images/linkedin-ico.webp"
+              alt="linkedin-icon"
+              loading="lazy"
+          /></a>
+        </li>
+      </ul>
+      <div class="info">
+        <p><a href="attributions.html">Attributions</a></p>
+        <p>
+          <a href="https://www.youtube.com/your-demo-video" target="_blank"
+            >Project Video</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
