@@ -15,13 +15,26 @@
   }
   /*Menu - End*/
 
+  /*Main index - Start*/
+  main.main-index, main.main-contact, main.main-success{
+    margin: auto;
+    max-width: 90rem;
+  }
+  /*Main index - End*/
+
+  /*Main success - Start*/
+  main.main-success h2{
+    padding: 1rem;
+  }
+  /*Main success - End*/
+
   /*Hero - Start*/
-  section.hero{
+  div.hero{
     height: 35rem;
     overflow: hidden;
   }
 
-  section.hero picture img{
+  div.hero picture img{
     height: 100%;
     object-fit: cover;
     width: 100%;
@@ -31,6 +44,11 @@
   /*Tickets - Start*/
   div.tickets{
     display: flex;
+  }
+
+  div.ticket:hover {
+    box-shadow: 0 0 1.2rem .2rem var(--accent-color);
+    transform: scale(1.01);
   }
   /*Tickets - End*/
 

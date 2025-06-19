@@ -9,7 +9,7 @@
     />
     <meta name="author" content="Roberto Polo" />
 
-    <meta property="og:title" content="CineCosmos - Home" />
+    <meta property="og:title" content="CineCosmos - Contact" />
     <meta
       property="og:description"
       content="Discover upcoming movies and showtimes at CineCosmos."
@@ -22,12 +22,14 @@
     <meta property="og:type" content="website" />
 
     <link rel="icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/small.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/small.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
 
-    <script type="module" src="scripts/main.js" defer></script>
-    <title>CineCosmos | Home</title>
+    <script src="./scripts/menu.js" defer></script>
+    <script src="./scripts/form.js" defer></script>
+
+    <title>CineCosmos | Contact</title>
   </head>
   <body>
     <header>
@@ -52,18 +54,17 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main-contact">
+      <h2>Contact Us</h2>
+      <p>
+        Please fill out the form below and we’ll get back to you as soon as
+        possible.
+      </p>
       <section>
-        <h2>Contact Us</h2>
-        <p>
-          Please fill out the form below and we’ll get back to you as soon as
-          possible.
-        </p>
-
-        <form action="thankyou.html" method="get" id="join-form">
+        <form action="success.html" method="get" id="success-form">
           <h2>Membership application form</h2>
           <fieldset>
-            <legend>Applicant info</legend>
+            <legend>Basic info</legend>
             <label for="firstname">
               First name
               <input
@@ -84,17 +85,6 @@
                 name="lname"
                 title="Enter your last name"
                 autocomplete="family-name"
-              />
-            </label>
-            <label for="organization-title">
-              Organization title
-              <input
-                type="text"
-                id="organization-title"
-                name="orgtitle"
-                title="Only alpha characters, hyphens and spaces (Min. 7 characters)"
-                autocomplete="organization-title"
-                pattern="^[A-Za-z\s\-]{7,}$"
               />
             </label>
           </fieldset>
@@ -125,39 +115,13 @@
             </label>
           </fieldset>
           <fieldset>
-            <legend>Business info</legend>
-            <label for="business-name">
-              Business/Organization name
-              <input
-                type="text"
-                id="business-name"
-                required
-                name="bizname"
-                title="Enter your business or organization name"
-                autocomplete="organization"
-              />
-            </label>
-            <label for="membership-level">
-              Membership level
-              <select
-                id="membership-level"
-                name="memlvl"
-                title="Select your membership level"
-                required
-              >
-                <option value="" disabled selected>Select membership...</option>
-                <option value="non-profit">NP (Non-profit) membership</option>
-                <option value="bronze">Bronze membership</option>
-                <option value="silver">Silver membership</option>
-                <option value="gold">Gold membership</option>
-              </select>
-            </label>
-            <label for="business-description">
-              Business description
+            <legend>Message</legend>
+            <label for="comments">
+              Comments
               <textarea
-                id="business-description"
+                id="comments"
                 title="Describe your business"
-                name="bizdesc"
+                name="comments"
               ></textarea>
             </label>
           </fieldset>

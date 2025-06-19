@@ -26,7 +26,8 @@
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/larger.css" />
 
-    <script type="module" src="scripts/main.js" defer></script>
+    <script src="./scripts/menu.js" defer></script>
+
     <title>CineCosmos | Home</title>
   </head>
   <body>
@@ -53,15 +54,19 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main-index">
       <!-- Hero Section -->
-      <section class="hero">
+      <div class="hero">
         <picture>
           <!-- media="(min-width:1024px)" -->
-          <source media="(min-width:64.06rem)" srcset="./images/hero2.jpg" />
+          <source media="(min-width:64.06rem)" srcset="./images/hero-lg.webp" />
           <!-- media="(min-width:641px)" -->
-          <source media="(min-width:40.05rem)" srcset="./images/hero2.jpg" />
-          <img src="./images/hero2.jpg" loading="lazy" alt="theather-photo" />
+          <source media="(min-width:40.05rem)" srcset="./images/hero-md.webp" />
+          <img
+            src="./images/hero-sm.webp"
+            loading="lazy"
+            alt="theather-photo"
+          />
         </picture>
         <div>
           <h1>Welcome to CineCosmos</h1>
@@ -69,7 +74,7 @@
             View showtimes
           </button>
         </div>
-      </section>
+      </div>
 
       <!-- About Section -->
       <section class="about">

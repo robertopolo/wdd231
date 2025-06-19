@@ -28,7 +28,7 @@ body{
 /* Reset - End*/
 
 /* Defaults - Start*/
-main{
+html{
   background-color: #d9dadb;
 }
 
@@ -135,17 +135,17 @@ ul.menu-links{
 /* Menu - End */
 
 /* Hero - Start */
-section.hero{
+div.hero{
   object-fit: contain;
   position: relative;
   width: 100%;
 }
 
-section.hero picture img{
+div.hero picture img{
   width: 100%;
 }
 
-section.hero div{
+div.hero div{
   align-items: center;
   border-radius: .5rem;
   display: flex;
@@ -161,12 +161,12 @@ section.hero div{
   width: 80%;
 }
 
-section.hero div h1{
+div.hero div h1{
   color: var(--accent-color);
   text-align: center;
 }
 
-section.hero div button{
+div.hero div button{
   background-color: var(--accent-color);
   border-radius: .3rem;
   color: var(--dark);
@@ -195,10 +195,7 @@ section.about, section.ticket-prices {
 }
 
 /* Tickets - Start */
-.ticket:hover {
-  box-shadow: 0 .4rem 1.2rem rgba(0, 0, 0, 0.2);
-  transform: scale(1.05);
-}
+
 
 .tickets {
   display: grid;
@@ -218,7 +215,6 @@ section.about, section.ticket-prices {
   height: 13rem;
   justify-content: center;
   padding: .5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 div.ticket h3, div.ticket p, p.price{
@@ -226,7 +222,7 @@ div.ticket h3, div.ticket p, p.price{
   font-weight: bold;
 }
 
-.ticket h3{
+div.ticket h3{
   font-size: 2.2rem;
 }
 
@@ -235,16 +231,11 @@ div.ticket h3, div.ticket p, p.price{
 }
 /* Tickets - End */
 
-
-
-
-
-
-
-
-
-
-
+/*Main contact - Start*/
+main.main-contact h2, main.main-contact p{
+  padding: 1rem;
+}
+/*Main contact - End*/
 
 /*
 .movies-container {
@@ -273,51 +264,51 @@ div.ticket h3, div.ticket p, p.price{
 */
 
 /*Form - Start*/
-form#join-form, aside div.card-join{
+#success-form{
   background-color: #fff;
   border-radius: .5rem;
   box-shadow: 0 0 1rem rgba(0,0,0,0.3);
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin: auto;
+  margin: 1rem auto;
   padding: 2rem;
   width: 80%;
 }
 
-form#join-form *:not(legend){
+#success-form *:not(legend){
   display: block;
   width: 100%;
 }
 
-form#join-form h2, form#join-form h3, form#join-form legend{
+#success-form h2, #success-form h3, #success-form legend{
   color: #07173f;
   font-weight: bold;
 }
 
-form#join-form h2{
+#success-form h2{
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-form#join-form legend{
+#success-form legend{
   font-size: 1.5rem;
 }
 
-form#join-form label{
+#success-form label{
   font-size: 1.4rem;
   font-weight: bold;
 }
 
-form#join-form input:required, form#join-form select:required{
+#success-form input:required, #success-form select:required{
   border-left: .3rem solid red;
 }
 
-form#join-form input:required:valid{
+#success-form input:required:valid{
   border-left-color: green;
 }
 
-form#join-form fieldset{
+#success-form fieldset{
   border: .1rem solid #bababa;
   border-radius: .5rem;
   display: flex;
@@ -326,7 +317,7 @@ form#join-form fieldset{
   padding: 1rem;
 }
 
-form#join-form fieldset input, textarea, select{
+#success-form fieldset input, textarea, select{
   border: .1rem solid #bababa;
   border-radius: .3rem;
   font-size: 1.25rem;
@@ -334,16 +325,16 @@ form#join-form fieldset input, textarea, select{
   padding: .75rem;
 }
 
-form#join-form textarea{
+#success-form textarea{
   height: 10rem;
   resize: none;
 }
 
-form#join-form input[type='submit']{
+#success-form input[type='submit']{
   cursor: pointer;
 }
 
-form#join-form input[type='submit'], aside div.card-join button{
+#success-form input[type='submit']{
   background-color: var(--primary-color);
   border-radius: .5rem;
   color: var(--text-color);
@@ -354,6 +345,15 @@ form#join-form input[type='submit'], aside div.card-join button{
   max-width: 25rem;
 }
 /*Form - End*/
+
+/*Success - Start*/
+#results{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+/*Success - End*/
 
 footer, div.f-project, div.info {
   align-items: center;
@@ -392,4 +392,20 @@ footer ul li a img{
 footer a {
   color: var(--accent-color);
   text-decoration: none;
+}
+
+/*Animations*/
+
+@keyframes blink-border {
+  0%, 100% {
+    border: .3rem solid transparent;
+  }
+  50% {
+    border: .3rem solid #eab2087f;
+  }
+}
+
+.ticket {
+  animation: blink-border 1s infinite;
+  border-radius: .5rem;
 }
