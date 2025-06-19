@@ -6,6 +6,22 @@ const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
 const movies = await fetchData();
 
+async function fetchData(){
+  try {
+    const response = await fetch('./data/movies.json');
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const m = await response.json();
+
+    return m
+  } catch (err) {
+    console.log(err);
+  }
+}
+
 movies.forEach((movie) => {
   const movieCard = createMovieCard(favorites, movie);
 
@@ -24,19 +40,3 @@ movies.forEach((movie) => {
     }
   });
 });
-
-async function fetchData(){
-  try {
-    const response = await fetch('./data/movies.json');
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    const m = await response.json();
-
-    return m
-  } catch (err) {
-    console.log(err);
-  }
-}
