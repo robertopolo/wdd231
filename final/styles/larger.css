@@ -52,6 +52,21 @@
   }
   /*Tickets - End*/
 
+  /*Movies - Start*/
+  #movie-gallery div{
+    cursor: pointer;
+  }
+
+  #movie-gallery div:hover{
+    box-shadow: 0 0 1rem .2rem var(--accent-color);
+    transform: scale(1.05);
+  }
+
+  #movie-gallery div button:hover{
+    color: var(--accent-color);
+  }
+  /*Movies - End*/
+
   /*Footer - Start*/
   footer{
     display: grid;

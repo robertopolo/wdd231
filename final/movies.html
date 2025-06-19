@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="styles/larger.css" />
 
     <script src="./scripts/main.js" defer></script>
+    <script type="module" src="./scripts/movies.js"></script>
 
     <title>CineCosmos | Home</title>
   </head>
@@ -53,13 +54,10 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="movie-gallery">
-        <h2>Now Showing</h2>
-        <div id="movie-list" class="movie-list">
-          <!-- JavaScript will dynamically insert movie cards here -->
-        </div>
-      </section>
+    <main class="main-movies">
+      <h2>Now Showing</h2>
+      <section id="movie-gallery"></section>
+      <dialog id="movie-details"></dialog>
     </main>
 
     <footer>
