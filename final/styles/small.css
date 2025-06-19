@@ -431,14 +431,60 @@ footer a {
 
 @keyframes blink-border {
   0%, 100% {
-    border: .3rem solid transparent;
+    /* border: .3rem solid transparent; */
+    background-color: var(--primary-color);
   }
   50% {
-    border: .3rem solid #eab2087f;
+    /* border: .3rem solid ; */
+    background-color: #03464d;
   }
 }
 
 .ticket {
-  animation: blink-border 1s infinite;
+  animation: blink-border 2s infinite;
   border-radius: .5rem;
+}
+
+/*Dialog*/
+dialog{
+    background-color: var(--text-color);
+    border: .1rem solid rgba(0,0,0, .1);
+    border-radius: .5rem;
+    box-shadow: 0 0 .5rem var(--dark-grey);
+    margin: auto;
+    padding: 2rem;
+    max-width: 85%;
+}
+
+dialog > *{
+    margin-bottom: 1rem;
+}
+
+dialog button{
+    border: .1rem solid rgba(0,0,0, .1);
+    border-radius: .3rem;
+    cursor: pointer;
+    padding: 1rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+dialog button:active{
+    border: .1rem solid rgba(0,0,0, .1);
+}
+
+dialog h3{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+dialog p{
+    font-size: 1.5rem;
+}
+
+dialog p span{
+    font-size: 1.5rem;
+    font-weight: bold;
 }

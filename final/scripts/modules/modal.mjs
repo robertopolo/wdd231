@@ -1,14 +1,13 @@
-const dialogBox = document.querySelector('#movie-details');
-const buttons = document.querySelectorAll('div.card-join button');
+export function modal(m) {
+  const dialogBox = document.querySelector('#movie-details');
+  // const buttons = document.querySelectorAll('div.card-join button');
 
-function displayDescription(m) {
   dialogBox.innerHTML = '';
   dialogBox.innerHTML = `
   <button id="close-modal">❌</button>
-  <h3>${m.name}</h3>
-  <p><span>Benefits</span>:<p>
-  <p>${m.description}</p>
-  <p><span>Price</span>: $${m.price}</p>
+  <h3>${m.title}</h3>
+  <p><span>Overview</span>:<p>
+  <p>${m.overview}</p>
   `;
 
   dialogBox.showModal();
@@ -19,13 +18,12 @@ function displayDescription(m) {
     dialogBox.close();
   });
 }
+// buttons.forEach((button) => {
+//   button.addEventListener('click', () => {
+//     dialogBox.innerHTML = '';
 
-buttons.forEach((button) => {
-  button.addEventListener('click', () => {
-    dialogBox.innerHTML = '';
+//     let m = descriptions.find((desc) => desc.name === button.id);
 
-    let m = descriptions.find((desc) => desc.name === button.id);
-
-    displayDescription(m);
-  });
-});
+//     displayDescription(m);
+//   });
+// });

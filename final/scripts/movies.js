@@ -1,5 +1,6 @@
 import movies from '../data/movies.mjs';
 import { toggleFavorite } from './modules/favorite.mjs';
+import { modal } from './modules/modal.mjs';
 
 const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 const gallery = document.querySelector('#movie-gallery');
@@ -26,12 +27,12 @@ movies.forEach((movie) => {
   movieCard.addEventListener('click', (e) => {
     if (e.target.closest('.fav-btn')) {
       const btn = e.target.closest('.fav-btn');
-      console.log(btn.dataset);
       const movieId = btn.dataset.movieId;
 
       toggleFavorite(movieId, btn);
     } else if (e.target.closest('.details-btn')) {
-      console.log(e);
+        const mov = movies.find(m => m.id === parseInt(movieCard.querySelector('.fav-btn').dataset.movieId));
+        modal(mov);
     }
   });
 });
