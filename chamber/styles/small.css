@@ -399,7 +399,7 @@ section.directory-section p{
     flex-direction: column;
 }
 
-section.directory-section {
+.list section.directory-section {
     display: grid;
     height: 10rem;
     grid-template-columns: 1fr 1fr 1fr;
@@ -407,26 +407,26 @@ section.directory-section {
     padding: .5rem;
 }
 
-section.directory-section> * {
+.list section.directory-section> * {
     margin: .5rem;
 }
 
-section.directory-section img {
+.list section.directory-section img {
     height: auto;
     margin: auto;
     max-width: 10rem;
     object-fit: contain;
 }
 
-section.directory-section p{
+.list section.directory-section p{
     font-size: 1.2rem;
 }
 
-section.directory-section p:nth-child(2), section.directory-section a{
+.list section.directory-section p:nth-child(2), .list section.directory-section a{
     display: none;
 }
 
-section.directory-section:nth-child(even) {
+.list section.directory-section:nth-child(even) {
     background-color: rgba(22, 188, 253, 0.253);
 }
 
